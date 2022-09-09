@@ -1,0 +1,32 @@
+
+
+----3rd que---
+
+for i in range(int(input())):
+    x,y,z,w=list(map(int,input().split()))
+    m=x/z
+    n=y/w
+    if m==n:
+        print("Equal")
+    elif m>n:
+        print("Alice")
+    else:
+        print("Bob")
+        
+----5th que----
+
+for i in range(int(input())):
+    n=int(input())
+    x=list(map(int,input().split()))
+    y=min(x)
+    z=max(x)
+    l=[]
+    
+    for i in range(n):
+        p=x[i]*y
+        l.append(p)
+    for i in range(n):
+        k=x[i]*z
+        l.append(k)
+    print(min(l),max(l),sep=" ")
+ 
